@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura - Accessibility Enforcement Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for bold geometric sans-serif font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme-voyager">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo-container" data-enforce-type="ui element" data-enforce-badge="Optimized">
+            <span class="logo-text">AURA</span>
+        </div>
+        <div class="header-controls">
+            <!-- Persona Dropdown -->
+            <div class="control-group" data-enforce-type="interaction" data-enforce-badge="Target Boosted">
+                <select id="personaSelect" aria-label="Select Accessibility Persona">
+                    <option value="voyager">The Voyager (Color Blind)</option>
+                    <option value="beacon">The Beacon (Low Vision)</option>
+                    <option value="guardian">The Guardian (Eye Strain)</option>
+                </select>
+            </div>
+            <!-- Simulate Aura Enforcer Button -->
+            <button id="enforcerToggle" class="btn-enforcer" data-enforce-type="interaction" data-enforce-badge="Target Boosted">
+                Simulate Aura Enforcer
+            </button>
+            <!-- Clarify Content Toggle -->
+            <div class="clarify-wrapper" data-enforce-type="interaction" data-enforce-badge="Target Boosted">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="clarifyToggle">
+                    <span class="slider"></span>
+                    <span class="toggle-label">Clarify Content</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-left">
+                <div class="pill-badge" data-enforce-type="ui element" data-enforce-badge="Optimized">
+                    Aura Enforcer | Alpha 0.1
+                </div>
+                <h1 id="heroHeadline" class="hero-headline" data-enforce-type="structure" data-enforce-badge="Readable">
+                    The Guardian of <span class="gradient-text">Accessibility.</span>
+                </h1>
+                <p id="heroSubtitle" class="hero-subtitle" data-enforce-type="content box" data-enforce-badge="Readable">
+                    Intelligence that lives between your windows. Aura identifies, cleans, and fixes digital barriers in real-time, bringing inclusive experiences to every application on your machine.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" data-enforce-type="interaction" data-enforce-badge="Target Boosted">Download for Windows</button>
+                    <button class="btn btn-outline" data-enforce-type="interaction" data-enforce-badge="Target Boosted">Watch the Vision</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <!-- Status Card -->
+                <div class="status-card" data-enforce-type="ui element" data-enforce-badge="Optimized">
+                    <div class="status-line">Scanning: Notepad.exe</div>
+                    <div class="status-line">Fixes Applied: 12</div>
+                    <div class="status-line">Mode: ENFORCING</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Universal Empowerment Section -->
+        <section class="empowerment-section">
+            <div class="section-header" data-enforce-type="structure" data-enforce-badge="Semantic">
+                <h2 class="section-title">Universal Empowerment</h2>
+                <p class="section-subtitle">the web, legacy apps, and everything in between</p>
+            </div>
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="feature-card" data-enforce-type="content box" data-enforce-badge="Readable">
+                    <div class="card-tag" data-enforce-type="structure" data-enforce-badge="Semantic">Visual Enforcement</div>
+                    <p class="card-desc">Auto-corrects low contrast, identifies unlabelled icons, enlarges tiny touch targets.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card" data-enforce-type="content box" data-enforce-badge="Readable">
+                    <div class="card-tag" data-enforce-type="structure" data-enforce-badge="Semantic">Aura Narrative</div>
+                    <p class="card-desc">A smart, localized text-to-speech engine that describes the screen without the noise of traditional screen readers.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card" data-enforce-type="content box" data-enforce-badge="Readable">
+                    <div class="card-tag" data-enforce-type="structure" data-enforce-badge="Semantic">Vision Core</div>
+                    <p class="card-desc">100% On-device AI. Your screen data never leaves your computer. Privacy is an accessibility right.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" data-enforce-type="ui element" data-enforce-badge="Optimized">
+        <p>© 2026 Aura Systems. Part of the Tworam Ecosystem.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
